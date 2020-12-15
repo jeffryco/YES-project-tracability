@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ajouter au stock</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel= "stylesheet" href="style.css">        
+    </head>
+    
+    
+    
+    <body>
+        <section class ="formulaire" style="overflow-x:auto;">
+            <h1> Ajouter un ingrédient au stock </h1>
+ 
+            <form method="post" action="postInscription">
+                
+                <div>
+                    <strong> <label> Nom de l'ingrédient à ajouter  </label> : 
+                    <select name="ingredient_choisi" id="ingredient_choisi">
+                        <option value="tout">Afficher la liste des ingredient actifs</option>
+                        <option value="Afficher">Afficher</option>
+                        <option value="la">la</option>
+                        <option value="liste">liste</option>
+                        <option value="des">des</option>
+                        <option value="ingredient">ingredient</option>
+                        <option value="actifs">actifs</option>
+                    </select> </strong> <br/> <br/> <br/>
+                    
+                    <div>
+                        <table>
+                            <thead>
+                                <th> Paramètre </th>
+                                <th> Description du paramètre </th>
+                                <th> Valeur </th>
+                            </thead>
+                            
+                            
+                            <tbody>
+                                <tr>
+                                    <td> Date de réception </td>
+                                    <td> Date de reception d'un ingrédient de ce type sur site </td>
+                                    <td> <input type="date" class="lesinputs" name="date_reception" id="date_reception" /> </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td> Nom du fournisseur </td>
+                                    <td> Nom du fournisseur pour ce batch d'ingrédient </td>
+                                    <td> <input type="text" class="lesinputs" name="nom_fournisseur" id="nom_fournisseur" /> </td>
+                                </tr>    
+                                
+                                <tr>
+                                    <td> Région d’origine </td>
+                                    <td> Région ou pays de transformation </td>
+                                    <td> <input type="text" class="lesinputs" name="origin" id="origin" /> </td>
+                                </tr>                               
+                                 
+                                <tr>
+                                    <td> Quantité initiale reçue </td>
+                                    <td> Quantité recue dans l'unité spécifiée </td>
+                                    <td> <input type="number" class="lesinputs" name="quantite_origin" id="quantite_origin" /> </td>
+                                    
+                                </tr>
+                               
+                                <tr>
+                                    <td> Unité de quantité </td>
+                                    <td> Unité pour les quantités recues et utilisées </td>
+                                    <td> <input type="text" class="lesinputs" name="unite" id="unite" /> </td>
+                                </tr>
+                               
+                                <tr>
+                                    <td> Date de d'expiration </td>
+                                    <td> Date de périssage de ce produit </td>
+                                    <td> <input type="date" class="lesinputs" name="date_reception" id="date_reception" /> </td>
+                                </tr>
+                                
+                                                        
+                                
+                                
+                            </tbody>
+                            
+                            
+                            
+                            
+                        </table>
+                    
+                </div>
+           
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </form>
+            
+            
+        </sections>
+                
+    </body>
+</html>

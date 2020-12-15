@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Modifier un élément du stock</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel= "stylesheet" href="style.css">        
+    </head>
+    
+    
+    
+    <body>
+          <header>
+            <nav>
+                <a href="profil.html"> Profil </a>   
+                <a class="active" href="ingredients.html"> Ingrédients </a>
+                <a href="stocks.html"> Stocks </a>
+                <a href="recettes.html"> Recettes </a> 
+                <a href="batchs.html"> Batchs </a> 
+                <a href="aide.html"> Aide </a>                  
+            </nav>  
+        </header>
+        
+        <div> </div>
+        
+        <section class ="formulaire" style="overflow-x:auto;">
+            <h1> Stocks d'ingrédients </h1>
+            <table>
+                <thead>
+                    <th> Nom de l'ingrédient </th>
+                    <th> Fournisseur </th>
+                    <th> Date de reception </th>
+                    <th> Quantité actuelle </th>
+                    <th> Origine </th>
+                    <th> Date d'expiration </th>
+                </thead>
+                
+                <tbody> 
+                    <tr data-href="modif_stock.html">
+                        <td> Houblon </td>
+                        <td> Prof. Blanche Neige </td>
+                        <td> 2020/11/24 </td>
+                        <td> 2 kg </td>
+                        <td> ISA parrainer houblon </td>
+                        <td> 2021/11/24 </td>
+                    </tr>
+
+                </tbody>            
+            </table>
+            
+            <script>
+                document.addEventListener("DOMContentLoaded",() => {
+                    const rows = document.querySelectorAll("tr[data-href]");
+                    
+                    rows.forEach(row => {
+                        row.addEventListener("click",() => {
+                            window.location.href = row.dataset.href;
+                        });
+                    });
+                });
+            </script>
+            
+    </body>
+</html>

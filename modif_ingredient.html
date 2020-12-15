@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel= "stylesheet" href="style.css">
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <title> Modification d'ingrédients </title>
+    </head>
+    
+    
+    <body>
+              <section class ="formulaire" style="overflow-x:auto;">
+                <h1> Ajouter ou modifier un ingrédient </h1>
+  
+                <form method="post" action="postInscription">
+
+                    <div class="div_input validate-input" data-validate="Ce champs est nécessaire">
+                        <label>Nom de l'ingrédient </label> : 
+                        <input class="lesinputs" type="text" name="nom_ingredient" id="nom_ingredient" placeholder="Afficher la valeur actuelle?!?!?" size="30" required/>
+                    </div> <br/> <br/> <br/>
+                    
+                    <div>
+                        <table>
+                            <thead>
+                                <th> Paramètre </th>
+                                <th> Type </th>
+                                <th> Nécessité </th>
+                                <th> Description du paramètre </th>
+                            </thead>
+                            
+                            
+                            <tbody>
+                                <tr>
+                                    <td> Date de réception </td>
+                                    <td> Date </td>
+                                    <td> Toujours obligatoire </td>
+                                    <td> Date de reception d'un ingrédient de ce type sur site </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td> Nom du fournisseur </td>
+                                    <td> Texte </td>
+                                    <td> Toujours obligatoire </td>
+                                    <td> Nom du fournisseur pour ce batch d'ingrédient </td>
+                                </tr>    
+                                
+                                <tr>
+                                    <td> Pays d’origine </td>
+                                    <td> Texte </td>
+                                    <td> Toujours obligatoire </td>
+                                    <td> Pays de production ou de transformation, dependament de l'ingrédient </td>
+                                </tr>                               
+                                 
+                                <tr>
+                                    <td> Quantité initiale reçue </td>
+                                    <td> Chiffre </td>
+                                    <td> Toujours obligatoire </td>
+                                    <td> Quantité recue dans l'unité spécifiée </td>
+                                </tr>
+                               
+                                <tr>
+                                    <td> Unité de quantité </td>
+                                    <td> Texte </td>
+                                    <td> Toujours obligatoire </td>
+                                    <td> Unité pour les quantités recues et utilisées </td>
+                                </tr>
+                               
+                                <tr>
+                                    <td> Date de d'expiration </td>
+                                    <td> Date </td>
+                                    <td> Toujours obligatoire </td>
+                                    <td> Date de périssage de ce produit </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td> 
+                                        <input class="lesinputs" type="text" name="nom_parametre" id="nom_parametre" placeholder="Nom du nouveau paramètre" size="30" required/>
+                                    </td>
+                                    <td> 
+                                        <label for="type_data"></label><br />
+                                        <select name="type_data" id="type_data">
+                                            <option value="date">Date</option>
+                                            <option value="alphanum">Texte</option>
+                                            <option value="chiffre">Chiffre</option>
+                                            <option value="ouinon">Oui ou non</option>
+                                        </select> 
+                                    </td>
+                                    <td> 
+                                        <label for="ncess_data"></label><br />
+                                        <select name="ncess_data" id="ncess_data">
+                                            <option value="obligatoire">Obligatoire</option>
+                                            <option value="Optionel">Optionel</option>
+                                        </select> 
+                                    </td>
+                                    <td> 
+                                        <textarea name="description_parametre" id="description_parametre"> </textarea>
+                                    </td>
+                                </tr>                                                            
+                            </tbody>  
+                        </table>
+                    </div> <br/> <br/> <br/>
+                        
+
+                    <div> <input type="submit" value="Envoyer" /> </div>
+                
+                
+            </form>
+        </section>
+    </body>
+</html>
